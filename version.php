@@ -19,16 +19,16 @@
  * Config for filter_buttonawesome
  *
  * @package    filter
- * @subpackage button
- * @copyright  2013 Julian Ridden <julian@moodleman.net>
- *             adapted by Richard Oelmann
+ * @subpackage buttonawesome
+ * @copyright  fontawesome filter 2013 Julian Ridden <julian@moodleman.net>
+ * 			   adapted to include bootstrap button code by Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2013112100;            // The current plugin version (Date: YYYYMMDDXX)
+$plugin->version   = 2014042500;            // The current plugin version (Date: YYYYMMDDXX)
 $plugin->maturity = MATURITY_STABLE;        // this version's maturity level.
-$plugin->release = '2.0 (Build: 20131121)';
+$plugin->release = '2.1 (Build: 20140425)';
 $plugin->requires  = 2013050100;           // Requires this Moodle version
 $plugin->component = 'filter_buttonawesome'; // Full name of the plugin (used for diagnostics)
