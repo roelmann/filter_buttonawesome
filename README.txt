@@ -36,7 +36,7 @@ filter_fontawesome has a settings page to allow you to limit the filter to only 
 
 Still to be done
 =========================
-I am still figuring out how to add an abilityt  o detect a custom variable to allow the user to set the icon size.
+I am still figuring out how to add an abilityt  o detect a custom variable to allow the user to set the icon size. DONE: Simply add the icon size fontawesome code (e.g. fa-2x) following the icon name - it works
 
 Copyright
 =========================
