@@ -17,8 +17,9 @@
 
 /**
  * @package    filter
- * @subpackage fontawesome
- * @copyright  2013 Julian Ridden <julian@moodleman.net>
+ * @subpackage buttonawesome
+ * @copyright  fontawesome filter 2013 Julian Ridden <julian@moodleman.net>
+ * 			   adapted to include bootstrap button code by Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
