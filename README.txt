@@ -29,7 +29,8 @@ Usage
 First, activate the filter_tabs plugin in Site Administration -> Plugins -> Filters -> Manage filters
 
 To create FontAwesome icons in textfields, use the following syntax: [fa-*] where * is the name of the icon you wish to display
-
+To create the buttonawesome buttons and icons use the following key:
+[btn-x-iconname] where x can be p (primary), s (success), i (info), w (warning), d (danger) or any other single character for default and will apply the theme's colour scheme for those preset bootstrap button classes.
 Settings
 =========================
 filter_fontawesome has a settings page to allow you to limit the filter to only certain textbox formats.
