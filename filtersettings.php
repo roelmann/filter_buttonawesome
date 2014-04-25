@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
 
-    $settings->add(new admin_setting_configmulticheckbox('filter_butoonawesome/formats',
+    $settings->add(new admin_setting_configmulticheckbox('filter_buttonawesome/formats',
             get_string('settingformats', 'filter_buttonawesome'),
             get_string('settingformats_desc', 'filter_buttonawesome'),
             array(FORMAT_MOODLE => 1), format_text_menu()));
