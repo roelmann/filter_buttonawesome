@@ -19,8 +19,9 @@
  * Filter converting URLs in the text to HTML links
  *
  * @package    filter
- * @subpackage fontawesome
- * @copyright  2013 Julian Ridden <julian@moodleman.net>
+ * @subpackage buttonawesome
+ * @copyright  fontawesome filter 2013 Julian Ridden <julian@moodleman.net>
+ * 			   adapted to include bootstrap button code by Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -91,7 +92,7 @@ class filter_buttonawesome extends moodle_text_filter {
      */
     protected function load_global_config() {
         if (is_null(self::$globalconfig)) {
-            self::$globalconfig = get_config('filter_fontawesome');
+            self::$globalconfig = get_config('filter_buttonawesome');
         }
     }
     
