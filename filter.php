@@ -21,7 +21,7 @@
  * @package    filter
  * @subpackage buttonawesome
  * @copyright  fontawesome filter 2013 Julian Ridden <julian@moodleman.net>
- * 			   adapted to include bootstrap button code by Richard Oelmann
+ *             adapted to include bootstrap button code by Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -95,23 +95,23 @@ class filter_buttonawesome extends moodle_text_filter {
             self::$globalconfig = get_config('filter_buttonawesome');
         }
     }
-    
+
     private function callback(array $matches) {
-		$icon = substr($matches[1],6,strlen($matches[1]));
-		$btntype = substr($matches[1],4,1);
-		if ($btntype == "p"){
-			$button="primary";
-		} elseif ($btntype == "s"){
-			$button="success";
-		} elseif ($btntype == "i"){
-			$button="info";
-		} elseif ($btntype == "w"){
-			$button="warning";
-		} elseif ($btntype == "d"){
-			$button="danger";
-		} else {
-			$button="default";
-		}
+        $icon = substr($matches[1],6,strlen($matches[1]));
+        $btntype = substr($matches[1],4,1);
+        if ($btntype == "p"){
+            $button="primary";
+        } elseif ($btntype == "s"){
+            $button="success";
+        } elseif ($btntype == "i"){
+            $button="info";
+        } elseif ($btntype == "w"){
+            $button="warning";
+        } elseif ($btntype == "d"){
+            $button="danger";
+        } else {
+            $button="default";
+        }
         $embed = '<span class="btn btn-'.$button.'"><i class="fa fa-'.$icon.'"></i></span>';
 
         return $embed;
