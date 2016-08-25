@@ -99,7 +99,9 @@ class filter_buttonawesome extends moodle_text_filter {
     private function callback(array $matches) {
         $icon = substr($matches[1],6,strlen($matches[1]));
         $btntype = substr($matches[1],4,1);
-        if ($btntype == "p"){
+        if ($btntype == "o"){
+            $embed = '<i class="fa fa-'.$icon.'"></i></span>';
+        } elseif ($btntype == "p"){
             $button="primary";
         } elseif ($btntype == "s"){
             $button="success";
@@ -112,7 +114,10 @@ class filter_buttonawesome extends moodle_text_filter {
         } else {
             $button="default";
         }
-        $embed = '<span class="btn btn-'.$button.'"><i class="fa fa-'.$icon.'"></i></span>';
+
+        if ($btntype != "o") {
+            $embed = '<span class="btn btn-'.$button.'"><i class="fa fa-'.$icon.'"></i></span>';
+        }
 
         return $embed;
     }
